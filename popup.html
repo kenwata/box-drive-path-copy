@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        width: 360px;
+        margin: 0;
+        padding: 14px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 13px;
+      }
+
+      .title {
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+
+      .status {
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      .path {
+        padding: 8px;
+        background: #f4f4f4;
+        border-radius: 6px;
+        word-break: break-all;
+        font-family: Consolas, Monaco, monospace;
+        font-size: 12px;
+        white-space: pre-wrap;
+      }
+
+      .success {
+        color: #0a7a28;
+      }
+
+      .error {
+        color: #b00020;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">Box Drive Path Copier</div>
+    <div id="status" class="status">Copying...</div>
+    <div id="path" class="path"></div>
+
+    <script src="config.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

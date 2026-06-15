@@ -1,0 +1,10 @@
+# Distribution packages
+*.zip
+*.crx
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini

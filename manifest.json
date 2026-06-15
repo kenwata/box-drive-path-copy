@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "Box Drive Path Copier",
+  "version": "1.0.0",
+  "description": "Copy the current Box folder path as a local Box Drive path (Windows / macOS).",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "clipboardWrite",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://*.box.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "Copy Box Drive path",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16_gray.png",
+      "32": "icons/icon32_gray.png",
+      "48": "icons/icon48_gray.png",
+      "128": "icons/icon128_gray.png"
+    }
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Period",
+        "mac": "Command+Period"
+      },
+      "description": "Copy Box Drive path"
+    }
+  }
+}
