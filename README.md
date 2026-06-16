@@ -18,6 +18,8 @@ A Chrome extension that copies the current Box.com folder/file path to the clipb
 
 ### Requirements
 
+- **You must be invited to the folder as a user** so that it is synced via Box Drive. Folders shared via a link (without user invitation) are not accessible through Box Drive and will not work with this extension.
+- Only folders accessible through **Box Drive** are supported — shared links are not supported.
 - [Box Drive](https://www.box.com/drive) must be installed and the default mount path must be used
   - Windows: `%USERPROFILE%\Box\`
   - macOS: `~/Library/CloudStorage/Box-Box/`
@@ -69,6 +71,7 @@ Box.comで開いているフォルダ/ファイルの階層を、ローカルの
 
 ### 前提条件
 
+- **対象はBox Driveでアクセスできるフォルダのみです。** フォルダに「ユーザーとして招待」されていることが必要で、リンク共有でアクセスしているフォルダはBox Driveに同期されないため、本拡張機能は動作しません。
 - [Box Drive](https://www.box.com/drive) がインストール済みで、デフォルトのマウントパスを使用していること
   - Windows: `%USERPROFILE%\Box\`
   - macOS: `~/Library/CloudStorage/Box-Box/`
